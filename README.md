@@ -7,6 +7,6 @@ Generator of self-similar nonperiodic triangular tilings: TTT and PRT
     or TTT -- Tuebingen triangle tiling
     level: level of hierarchy (number of subdivision steps) recommended to be < 12
 ## Resources:
-* Penrose–Robinson triangule tiling: http://tilings.math.uni-bielefeld.de/substitution_rules/robinson_triangle
+* Penrose–Robinson triangle tiling: http://tilings.math.uni-bielefeld.de/substitution_rules/robinson_triangle
 * Tuebingen triangle tiling: http://tilings.math.uni-bielefeld.de/substitution_rules/tuebingen_triangle
 
