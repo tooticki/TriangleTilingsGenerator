@@ -1,4 +1,4 @@
-# tilings
+# TriangleTiligsGenerator
 Generator of self-similar nonperiodic triangular tilings: TTT and PRT
 ## Usage:
     $ ./PRT-TTT.py <image_size> <type> <level>
