@@ -1,15 +1,6 @@
-import math, cmath, cairo
+import math, cmath, cairo, sys
 
 goldenRatio = (1 + math.sqrt(5))/2
-
-print 'size [px]:'
-size = input()
-print '0-PRT 1-TTT:'
-TTT = input()
-print 'level [1-14]:' 
-hierarchyLevel = input()
-
-wheelRadius = size/2
 
 def subdivide(base_triangles):
     result = []
@@ -30,6 +21,22 @@ def subdivide(base_triangles):
                 P = A + (C - A) / goldenRatio
                 result += [(0, B, A, P), (1, B, P, C)]
     return result
+
+#input
+if len(sys.argv) != 4:
+	print('./RPT_TTT.py <image_size> <type> <level>')
+	sys.exit()
+
+size = int(sys.argv[1])
+if sys.argv[2] == 'TTT':
+	TTT = 1
+elif sys.argv[2] == 'PRT':
+	TTT = 0
+else:
+	print('<type> TTT RPT')
+	sys.exit()
+hierarchyLevel = int(sys.argv[3])
+wheelRadius = size/2
 
 # basic form
 base_triangles = []
@@ -82,9 +89,9 @@ print 'painting: done'
 color, A, B, C = base_triangles[0]
 cr.set_line_width(abs(B-A)/20.0)
 cr.set_line_join(cairo.LINE_JOIN_ROUND)
-for i in xrange(hierarchyLevel):
+for i in xrange(hierarchyLevel+1):
     t = triangles[i]
-    cr.set_line_width(abs(B-A)/5.0/(i/3+15))
+    cr.set_line_width(max(abs(B-A)/5.0/(i/3+15), 0.001))
     for color, A, B, C in t:
         cr.move_to(A.real, A.imag)
         cr.line_to(B.real, B.imag)
