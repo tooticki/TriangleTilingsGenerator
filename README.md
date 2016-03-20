@@ -1,5 +1,8 @@
 # TriangleTilingsGenerator
 Generator of self-similar nonperiodic triangular tilings: TTT and PRT
+
+![example png](img/TTT.png)
+
 ## Usage:
     $ ./PRT-TTT.py <image_size> <type> <level>
     image_size: size of a side of output square image, px
