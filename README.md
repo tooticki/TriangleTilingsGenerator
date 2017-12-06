@@ -1,5 +1,5 @@
 # TriangleTilingsGenerator
-Generator of self-similar nonperiodic triangular tilings: TTT and PRT
+Generator of self-similar nonperiodic triangular tilings: Tuebingen triangle tiling (TTT) and Penrose–Robinson triangle tiling (PRT)
 
 ![example png](img/TTT.png)
 
@@ -10,6 +10,6 @@ Generator of self-similar nonperiodic triangular tilings: TTT and PRT
     or TTT - Tuebingen triangle tiling
     level: level of hierarchy (number of subdivision steps) recommended to be < 12
 ## Resources:
-* Penrose–Robinson triangle tiling: http://tilings.math.uni-bielefeld.de/substitution_rules/robinson_triangle
-* Tuebingen triangle tiling: http://tilings.math.uni-bielefeld.de/substitution_rules/tuebingen_triangle
+* Penrose–Robinson triangle tiling: https://tilings.math.uni-bielefeld.de/substitution/robinson-triangle/
+* Tuebingen triangle tiling: https://tilings.math.uni-bielefeld.de/substitution/tuebingen-triangle/
 
