@@ -24,7 +24,7 @@ def subdivide(base_triangles):
 
 #input
 if len(sys.argv) != 4:
-	print('./RPT_TTT.py <image_size> <type> <level>')
+	print('./PRT_TTT.py <image_size> <type> <level>')
 	sys.exit()
 
 size = int(sys.argv[1])
@@ -33,7 +33,7 @@ if sys.argv[2] == 'TTT':
 elif sys.argv[2] == 'PRT':
 	TTT = 0
 else:
-	print('<type> TTT RPT')
+	print('<type> TTT PRT')
 	sys.exit()
 hierarchyLevel = int(sys.argv[3])
 wheelRadius = size/2
@@ -103,5 +103,5 @@ print 'outlines: done'
 
 # output
 if TTT: name = 'TTT'
-else: name = 'RPT'
+else: name = 'PRT'
 surface.write_to_png(name + '_level-%s_size-%s'%(hierarchyLevel,size) + '.png')
