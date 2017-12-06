@@ -1,7 +1,7 @@
 # TriangleTilingsGenerator
 Generator of self-similar nonperiodic triangular tilings: Tuebingen triangle tiling (TTT) and Penrose–Robinson triangle tiling (PRT)
 
-![example png](img/TTT.png)
+![example png](img/TTT_PRT_level-5_size-500.png)
 
 ## Usage:
     $ ./PRT-TTT.py <image_size> <type> <level>
